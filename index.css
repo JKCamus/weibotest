@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: url("body_bg.jpg") no-repeat;
+}
+
+.nav> {
+    height: 48px;
+    width: 100%;
+}
+
+.nav>img {
+    /* height: 100%; */
+    width: 100%;
+}
+
+.content {
+    width: 1000px;
+    height: auto;
+    margin: 200px auto 0 auto;
+    background: #f5e7e1;
+    overflow: hidden;
+}
+
+.content>.left {
+    /* margin: 0;padding: 0; */
+    float: left;
+    width: 150px;
+}
+
+.content>.right {
+    float: right;
+    width: 240px;
+}
+
+.content>.center {
+    width: 600px;
+    height: 168px;
+    float: left;
+    background: url("comment.png") no-repeat 0 0;
+    background-size: 600px 168px;
+}
+
+/* 文本输入布局 */
+.center>.comment {
+    width: 570px;
+    height: 73px;
+    margin-left: 15px;
+    margin-top: 44px;
+    border: none;
+    /* 文本框不可拖动大小 */
+    resize: none;
+    /* 文本框聚焦时无发光边框，默认蓝光 */
+    outline: none;
+}
+
+.center>.send {
+    width: 82px;
+    height: 30px;
+    margin-left: 506px;
+    margin-top: 4px;
+    border: none;
+    background-color: #fd8040;
+    color: rgb(243, 238, 234);
+}
+
+.messageList {
+    /* background: red; */
+    width: 600px;
+    /* height: 600px; */
+    /* 贴靠现象，做笔记 */
+    float: left;
+}
+
+.messageList>.info {
+    padding: 10px 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.info>.infoText {
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.info>.infoOperation {
+    /* overflow: hidden; */
+    /* 不通过overflow清除浮动，不会重新计算高，时间等会掉下去 */
+    overflow: hidden;
+    width: 100%;
+}
+
+/* 时间布局 */
+.infoTime {
+    font-size: 13px;
+    float: left;
+    color: #ccc;
+}
+
+.infoHandle {
+    /* font-size: 13px; */
+    float: right;
+
+}
+
+/* 顶踩删除栏布局 */
+.infoHandle>a {
+    color: #ccc;
+    text-decoration: none;
+    padding-left: 25px;
+    background: url("icons.png") no-repeat 0 0;
+    margin-left: 10px;
+    font-size: 13px;
+}
+
+.infoHandle>a:nth-child(2) {
+    background-position: 0 -17px;
+}
+
+.infoHandle>a:nth-child(3) {
+    background-position: 0 -33px;
+}
+
+.footer {
+    background: #d6682c;
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: right;
+    /* position: relative; */
+}
+
+.footer>a {
+    text-decoration: none;
+    border: 1px solid #ccc;
+    padding:0 5px ;
+    /* 什么时候要用inline-block，line-height */
+    line-height: 20px;
+    /* width: 20px;
+    height: 20px; */
+    display: inline-block;
+    color: rgb(32, 30, 30);
+    text-align: center;
+    /* position: absolute; */
+    /* left:0; */
+    
+}
+.footer>.page_number:hover{
+    background-color: red;
+}
+.footer>.cur{
+    background-color: red;
+}
